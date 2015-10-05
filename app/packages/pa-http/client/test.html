@@ -1,0 +1,31 @@
+<template name="test">
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <h2>Client</h2>
+          {{#each personsClient}}
+            <li>{{this.first_name}} {{this.last_name}}</li>
+          {{/each}}
+        </ul>
+
+
+        <button class="btn btn-primary" id="client">Call from client</button>
+
+      </div>
+
+      <div class="col-md-6">
+        <ul>
+          <h2>Server</h2>
+          {{#each personsServer}}
+            <li>{{this.first_name}} {{this.last_name}}</li>
+          {{/each}}
+        </ul>
+
+        <button class="btn btn-warning" id="server">Call from server</button>
+
+      </div>
+    </div>
+
+  </section>
+</template>
